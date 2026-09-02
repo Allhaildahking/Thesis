@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import thesisLogo from './Thesis Logo.png';
+import thesisWordmark from './Thesis wordmark.png';
 
 const services = [
   { number: '01', name: 'Brand strategy', copy: 'Positioning, story, audience and the sharp idea that makes the brand make sense.' },
@@ -34,7 +35,7 @@ export default function Home() {
 
       <nav className="floating-nav">
         <a className="brand-lockup" href="#top" aria-label="Thesis home">
-          <Image className="brand-logo" src={thesisLogo} alt="Thesis" priority sizes="(max-width: 700px) 96px, 124px" />
+          <Image className="brand-wordmark" src={thesisWordmark} alt="Thesis" priority sizes="(max-width: 700px) 112px, 150px" />
         </a>
         <div className="nav-links">
           <a href="#work">Work</a><a href="#services">Capabilities</a><a href="#start">Start</a>
@@ -91,7 +92,7 @@ export default function Home() {
         <div className="start-inner"><p className="kicker">Have a good idea?</p><h2>Give it a<br /><em>brand.</em></h2><p>Tell us what you&apos;re building, where it&apos;s stuck and where you want it to go. No pitch deck required.</p><div className="start-actions"><a className="big-action" href="mailto:hello.thesishq@gmail.com">Start a project <span>↗</span></a><a className="text-action" href="https://wa.me/2349119135716">Or talk to us on WhatsApp</a></div></div>
       </section>
 
-      <footer className="minimal-footer"><span>THESIS / 2026</span><span>Built for the undeniable.</span><span>Abuja · Nigeria</span></footer>
+      <footer className="minimal-footer"><Image className="footer-wordmark" src={thesisWordmark} alt="Thesis" sizes="72px" /><span>Built for the undeniable.</span><span>Abuja · Nigeria</span></footer>
     </main>
   );
 }
