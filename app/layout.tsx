@@ -1,21 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import thesisLogo from "./Thesis Logo.png";
 
 export const metadata: Metadata = {
-  title: "Thesis — Make your brand undeniable.",
-  description:
-    "Thesis is a branding agency helping ambitious startups build strategic brands and digital experiences people remember.",
-  icons: {
-    icon: thesisLogo.src,
-    apple: thesisLogo.src,
-  },
+  title: "Thesis — Brands That Make Sense",
+  description: "Thesis is a brand strategy and creative agency building clear, memorable brands through strategy, identity, digital design, and creative direction.",
+  metadataBase: new URL("https://thesishq.com"),
+  openGraph: { title: "Thesis — Brands That Make Sense", description: "Strategy, identity, digital, and everything in between.", type: "website", siteName: "Thesis" },
+  twitter: { card: "summary", title: "Thesis — Brands That Make Sense", description: "Strategy, identity, digital, and everything in between." },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
-  );
+  return <html lang="en"><body>{children}</body></html>;
 }
