@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import thesisLogo from "./Thesis Logo.png";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://thesishq.com"),
   openGraph: { title: "Thesis — Brands That Make Sense", description: "Strategy, identity, digital, and everything in between.", type: "website", siteName: "Thesis" },
   twitter: { card: "summary", title: "Thesis — Brands That Make Sense", description: "Strategy, identity, digital, and everything in between." },
-  icons: { icon: "/Thesis Logo.png" },
+  icons: { icon: thesisLogo.src },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
