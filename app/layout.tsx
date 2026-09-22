@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://thesishq.com"),
   openGraph: { title: "Thesis — Brands That Make Sense", description: "Strategy, identity, digital, and everything in between.", type: "website", siteName: "Thesis" },
   twitter: { card: "summary", title: "Thesis — Brands That Make Sense", description: "Strategy, identity, digital, and everything in between." },
+  icons: { icon: "/Thesis Logo.png" },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
